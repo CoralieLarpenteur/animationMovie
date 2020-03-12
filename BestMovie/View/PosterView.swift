@@ -20,7 +20,7 @@ class PosterView: UIView {
             switch style {
             case .liked:backgroundColor = UIColor.bmGreen
              case .unliked:backgroundColor = UIColor.bmRed
-              case .neutral:backgroundColor = UIColor.bmWhite
+              case .neutral:backgroundColor = UIColor.bmColor
                 
             
         }

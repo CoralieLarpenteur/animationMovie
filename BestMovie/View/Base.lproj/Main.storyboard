@@ -19,29 +19,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="qCr-RD-ThP">
-                                <rect key="frame" x="97" y="505.66666666666669" width="220" height="190.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="qCr-RD-ThP" secondAttribute="height" multiplier="379:328" id="ba3-HA-LH7"/>
-                                    <constraint firstAttribute="width" constant="220" id="lYq-Bi-YQ4"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhm-3k-hUn" userLabel="Poster View" customClass="PosterView" customModule="BestMovie" customModuleProvider="target">
-                                <rect key="frame" x="103" y="73" width="208" height="304"/>
+                                <rect key="frame" x="103" y="173" width="208" height="304"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ogz-Xy-kEY">
                                         <rect key="frame" x="10" y="10" width="188" height="284"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="BMColor"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Ogz-Xy-kEY" secondAttribute="trailing" constant="10" id="ACE-r7-6zM"/>
-                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="leading" secondItem="qhm-3k-hUn" secondAttribute="leading" constant="10" id="CxB-y5-vaj"/>
-                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="top" constant="10" id="OBl-IK-ps5"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ogz-Xy-kEY" secondAttribute="bottom" constant="10" id="U8b-bb-RMy"/>
-                                    <constraint firstAttribute="width" constant="208" id="VLU-Ux-tHO"/>
-                                    <constraint firstAttribute="height" constant="304" id="Zfq-hA-Vbt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ogz-Xy-kEY" secondAttribute="bottom" constant="10" id="Qe4-Mw-Z5N"/>
+                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="leading" secondItem="qhm-3k-hUn" secondAttribute="leading" constant="10" id="hiQ-yT-BTa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ogz-Xy-kEY" secondAttribute="trailing" constant="10" id="mNe-Wn-mjj"/>
+                                    <constraint firstItem="Ogz-Xy-kEY" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="top" constant="10" id="vDR-Xy-gsE"/>
+                                    <constraint firstAttribute="width" secondItem="qhm-3k-hUn" secondAttribute="height" multiplier="13:19" id="vtY-TH-LUe"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageView" destination="Ogz-Xy-kEY" id="tTK-NA-KbL"/>
@@ -49,31 +41,39 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oim-c0-L3x">
-                                <rect key="frame" x="40" y="393" width="334" height="36"/>
+                                <rect key="frame" x="40" y="491" width="334" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="1R8-67-4MO">
+                                <rect key="frame" x="87" y="36" width="240" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1R8-67-4MO" secondAttribute="height" multiplier="48:19" id="POz-bH-wck"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swifte the poster to the right or left" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lH-Yh-c0j">
-                                <rect key="frame" x="60" y="705" width="294" height="21"/>
+                                <rect key="frame" x="60" y="695" width="294" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.41568627450980389" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.69411764705882351" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="qhm-3k-hUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="Fyp-03-9lL"/>
-                            <constraint firstItem="qCr-RD-ThP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-40" id="KVf-OS-HDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8lH-Yh-c0j" secondAttribute="bottom" constant="20" id="2f1-fF-ACi"/>
+                            <constraint firstItem="qhm-3k-hUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="3n3-7k-Q4Y"/>
+                            <constraint firstItem="qhm-3k-hUn" firstAttribute="top" secondItem="1R8-67-4MO" secondAttribute="bottom" constant="42" id="QhA-C9-Vx5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8lH-Yh-c0j" secondAttribute="trailing" constant="60" id="Smf-AT-j2H"/>
                             <constraint firstItem="8lH-Yh-c0j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="U5d-EN-Nmq"/>
-                            <constraint firstItem="qhm-3k-hUn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UbI-Hj-Jnm"/>
-                            <constraint firstItem="8lH-Yh-c0j" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="aMo-4l-8ub"/>
-                            <constraint firstItem="qCr-RD-ThP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="byB-HI-Kcc"/>
-                            <constraint firstItem="Oim-c0-L3x" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="bottom" constant="16" id="geQ-ng-HoL"/>
+                            <constraint firstItem="1R8-67-4MO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="VqB-ba-gh4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1R8-67-4MO" secondAttribute="trailing" constant="87" id="gfh-cm-cQv"/>
                             <constraint firstItem="Oim-c0-L3x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gpW-Zv-kHt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qhm-3k-hUn" secondAttribute="trailing" constant="103" id="okr-AK-Eue"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oim-c0-L3x" secondAttribute="trailing" constant="40" id="qvh-Ih-EVs"/>
+                            <constraint firstItem="Oim-c0-L3x" firstAttribute="top" secondItem="qhm-3k-hUn" secondAttribute="bottom" constant="14" id="tEh-xg-52j"/>
+                            <constraint firstItem="1R8-67-4MO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ylQ-UI-sva"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -101,13 +101,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="logobestmovie" translatesAutoresizingMaskIntoConstraints="NO" id="52v-nr-L9q">
-                                <rect key="frame" x="137" y="525" width="220" height="190.33333333333331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="EaC-q4-4lt"/>
-                                    <constraint firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="vRz-sY-XT4"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your best movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhl-9A-hoj">
                                 <rect key="frame" x="115" y="65" width="185" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,10 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="BMColor"/>
-                        <constraints>
-                            <constraint firstItem="52v-nr-L9q" firstAttribute="width" secondItem="52v-nr-L9q" secondAttribute="height" multiplier="379:328" id="HJP-fZ-h0E"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.0" green="0.69803921568627447" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Zgf-vc-LDZ"/>
                     </view>
                 </viewController>
@@ -146,9 +136,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logobestmovie" width="273" height="229"/>
+        <image name="logobestmovie" width="331" height="98"/>
         <namedColor name="BMColor">
-            <color red="0.41568627450980394" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.69803921568627447" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

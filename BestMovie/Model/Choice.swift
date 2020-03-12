@@ -51,12 +51,19 @@ class Choice {
             NotificationCenter.default.post(notification)
         }
     }
+    
+    func addLikedMovie(with likedMovie:Movie){
+        likedMovies.append(likedMovie)
+    }
+    
+    func showMovies(){
+         likedMovies.forEach {(movie) in
+          print(movie.title)
+        }
+    }
     func finish(){
         state = .over
-        
-        
-       
-
+        showMovies()
     }
     private func goToNextMovie(){
         currentIndex < discoversMovies.count  - 1 ? currentIndex += 1 : finish()

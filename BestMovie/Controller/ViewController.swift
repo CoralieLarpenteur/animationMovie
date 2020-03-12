@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         switch posterView.style {
         case .liked:
             choice.setLikeOfCurrentMovie(with : true)
+            choice.addLikedMovie(with : choice.currentMovie)
         case .unliked:
            
             choice.setLikeOfCurrentMovie(with: false)
